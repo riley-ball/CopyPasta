@@ -1,6 +1,8 @@
 var channel;
 
 // TODO: Make it so it doesn't connect to an IRC unless it's an actual stream (check html?)
+// TODO: CHECK FOR CHANNEL CHANGE !!!!!!!!!!
+
 // Set channel variable to current streamer
 var docURL = document.URL;
 var len = docURL.length;
