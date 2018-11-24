@@ -1,7 +1,8 @@
 var channel;
+
+// Set channel variable to current streamer
 var docURL = document.URL;
 var len = docURL.length;
-
 var test;
 var i;
 for (i = len; i > 0; i--) {
