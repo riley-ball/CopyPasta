@@ -15,3 +15,5 @@ How to make changes:
 1. npm install webpack -g
 2. npm i -g webpack-cli
 3. type webpack into terminal - webpack automatically watches files and rebuilds for changes
+
+Chat messages can currently be tracked through the chrome console.
