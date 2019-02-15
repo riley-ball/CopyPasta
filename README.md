@@ -1,4 +1,5 @@
 # CopyPasta
+
 Chrome extension for Twitch.TV
 
 - Uses webpack, node.js and twitch-js
@@ -14,6 +15,10 @@ How to make changes:
 
 1. npm install webpack -g
 2. npm i -g webpack-cli
-3. type webpack into terminal - webpack automatically watches files and rebuilds for changes
+3. Type webpack into terminal - webpack automatically watches files and rebuilds for changes
 
 Chat messages can currently be tracked through the chrome console.
+
+SWITCHING TO REQUIRE-JS
+https://requirejs.org/docs/start.html
+https://docs.tmijs.org/v1.3.0/Events.html
