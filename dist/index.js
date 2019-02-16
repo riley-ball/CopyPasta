@@ -58,12 +58,12 @@ client.connect();
 var messages = [];
 
 client.on("chat", (channel, userstate, message, self) => {
-  console.log(message);
-  if (messages.length < 30) {
-    messages.push(message);
-  } else {
-    console.log(messages);
-  }
+  console.log(message, channel, userstate, self);
+  //   if (messages.length < 30) {
+  //     messages.push(message);
+  //   } else {
+  //     console.log(messages);
+  //   }
 });
 
 // chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
