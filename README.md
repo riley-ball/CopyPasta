@@ -22,3 +22,11 @@ Chat messages can currently be tracked through the chrome console.
 SWITCHING TO REQUIRE-JS
 https://requirejs.org/docs/start.html
 https://docs.tmijs.org/v1.3.0/Events.html
+
+NOTES:
+
+- Determine categories from which to weight similiarity on (message length, compare word sets etc...)
+- Switching channels
+- Possible database for known copypastas for specific channels?
+
+http://jsfiddle.net/a5ncfpe2/7/ - possible solution to text variable

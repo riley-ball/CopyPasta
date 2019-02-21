@@ -55,16 +55,28 @@ client.connect();
 //   console.log("test");
 // });
 
-var messages = [];
+var queue = [];
 
 client.on("chat", (channel, userstate, message, self) => {
-  console.log(message, channel, userstate, self);
+  queue.push([Number(userstate["tmi-sent-ts"]), message]);
+  console.log(message, queue.length, Number(userstate["tmi-sent-ts"]));
   //   if (messages.length < 30) {
   //     messages.push(message);
   //   } else {
   //     console.log(messages);
   //   }
 });
+
+// Check every second
+setInterval(function() {
+  // Shift queue if it has been more than 10 seconds
+  if (queue.length != 0) {
+    if (new Date().getTime() - queue[0][0] > 10000) {
+      var i = queue.shift();
+      console.log("test", queue.length);
+    }
+  }
+}, 500);
 
 // chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 //   alert("rawr");
